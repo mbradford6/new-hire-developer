@@ -1,0 +1,309 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  float: right;
+
+  a{
+    overflow: hidden;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-color: #dbe7b4;
+    text-align: center;
+    font-size: 0em;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  li{
+    display: inline;
+  }
+
+  a:active{
+    background-color: #d4f7dc;
+    width: 150px;
+  }
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+.section{
+  padding: 5px;
+  overflow: hidden;
+}
+
+.linkSection{
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 100%;
+  background-color: #dbe7b4;
+  text-align: center;
+  padding-top: 5px;
+
+  a{
+    font-size: 1.25em;
+    display: block;
+    margin-top: 45px;
+  }
+}
+
+.installation{
+
+  .section{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    border: 5px solid #dbe7b4;
+
+    a{
+      text-decoration: underline;
+    }
+  }
+
+  a{
+    color: black;
+  }
+
+  p{
+    width: 83%;
+    font-family: Georgia, serif;
+  }
+}
+
+.bookmarks{
+
+  .section{
+    width: 30%;
+    height: 250px;
+    float: left;
+    margin: 10px;
+
+    text-align: center;
+
+    color:#fff;
+
+  }
+
+  a{
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: underline;
+  }
+
+  p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 15px;
+    font-family: Helvetica;
+  }
+}
+
+
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+
+    ul{
+
+      a{
+        display: inline-block;
+        width: 120px;
+        background-color: #dbe7b4;
+        text-align: center;
+        font-size: 18px;
+        padding: 5px;
+      }
+    }
+
+
+
+    .linkSection{
+      position: absolute;
+      top: 85%;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      background-color: #dbe7b4;
+      text-align: center;
+      padding-top: 10px;
+
+      a{
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 15%;
+
+      }
+    }
+
+    .bookmarks{
+      .section{
+        width: 46%;
+      }
+    }
+}
+
+
+@media screen and (max-width: 561px) {
+
+  ul{
+    position: relative;
+    float: left;
+    padding: 0px;
+    overflow: hidden;
+
+    a{
+      display: inline-block;
+      width: 500px;
+      background-color: #dbe7b4;
+      text-align: center;
+      font-size: 18px;
+      padding: 0px;
+      margin-top:2px;
+    }
+  }
+
+  .linkSection{
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #dbe7b4;
+    text-align: center;
+    padding-top: 5px;
+
+    a{
+      font-size: 18px;
+      float: left;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 15px;
+      margin-right: 45px;
+
+    }
+  }
+
+  .installation{
+
+    .section{
+      position: relative;
+      width: 500px;
+      height: 350px;
+      margin-left: auto;
+      margin-right:auto;
+      margin-bottom: 10px;
+      border: 5px solid #dbe7b4;
+    }
+
+    a{
+      color: black;
+    }
+
+    p{
+      width: 100%;
+      font-family: Georgia, serif;
+    }
+  }
+
+  .bookmarks{
+
+    .section{
+      overflow: hidden;
+      width: 500px;
+      height: 250px;
+      float: left;
+      margin: 10px;
+      text-align: center;
+      color:#fff;
+    }
+
+    p{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 35px;
+    }
+  }
+
+}
